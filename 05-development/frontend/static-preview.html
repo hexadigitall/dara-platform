@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleAI - Your AI Fashion Companion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: {
+                            50: '#fef7ff',
+                            100: '#fceeff', 
+                            200: '#f8d4fe',
+                            300: '#f2b1fc',
+                            400: '#e879f9',
+                            500: '#d946ef',
+                            600: '#c026d3',
+                            700: '#a21caf',
+                            800: '#86198f',
+                            900: '#701a75',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-neutral-50 via-white to-purple-50">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-accent-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold">S</span>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">StyleAI</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-accent-600">Discover</a>
+                    <a href="#" class="text-gray-700 hover:text-accent-600">Style AI</a>
+                    <a href="#" class="text-gray-700 hover:text-accent-600">Trends</a>
+                    <a href="#" class="text-gray-700 hover:text-accent-600">Brands</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 rounded-lg hover:bg-gray-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-r from-accent-400 to-accent-600"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <div class="inline-flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-lg border">
+                    <span class="w-2 h-2 bg-accent-500 rounded-full animate-pulse"></span>
+                    <span class="text-sm font-medium text-gray-700">AI Stylist</span>
+                </div>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                Your AI Fashion
+                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-accent-600 to-purple-600">
+                    Companion
+                </span>
+            </h1>
+            
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Describe your style in natural language and discover perfect outfits from hundreds of brands. 
+                <span class="font-semibold text-accent-600">AI-powered, personalized, effortless.</span>
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                <button class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-accent-600 to-purple-600 text-white font-semibold rounded-2xl hover:from-accent-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-xl">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    Start Styling Now
+                </button>
+                
+                <button class="inline-flex items-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-2xl border-2 border-gray-200 hover:border-accent-300 transform hover:scale-105 transition-all duration-200">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M12 12h.01M12 12h.01M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z"></path>
+                    </svg>
+                    Watch Demo
+                </button>
+            </div>
+
+            <div class="flex items-center justify-center space-x-2 text-sm text-gray-500">
+                <div class="flex -space-x-2">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-r from-accent-400 to-purple-500 border-2 border-white"></div>
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-pink-500 border-2 border-white"></div>
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-r from-pink-400 to-red-500 border-2 border-white"></div>
+                </div>
+                <span>Trusted by 50,000+ fashion lovers</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Fashion AI That Actually Understands You
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience the future of fashion discovery with our cutting-edge AI technology
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 bg-white rounded-2xl shadow-lg border hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Conversational AI Styling</h3>
+                    <p class="text-gray-600 text-sm">Simply describe what you want and get perfect recommendations instantly.</p>
+                </div>
+
+                <div class="p-6 bg-white rounded-2xl shadow-lg border hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Virtual Try-On</h3>
+                    <p class="text-gray-600 text-sm">See how clothes look on you with advanced AR technology.</p>
+                </div>
+
+                <div class="p-6 bg-white rounded-2xl shadow-lg border hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-pink-500 to-red-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Cross-Brand Shopping</h3>
+                    <p class="text-gray-600 text-sm">Shop from 50+ brands in one place with unified checkout.</p>
+                </div>
+
+                <div class="p-6 bg-white rounded-2xl shadow-lg border hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Personal Style Learning</h3>
+                    <p class="text-gray-600 text-sm">Our AI learns your preferences and gets better over time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Interface Preview -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Try Our AI Stylist</h2>
+                <p class="text-lg text-gray-600">Experience conversational fashion styling</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl border overflow-hidden">
+                <div class="bg-gradient-to-r from-accent-500 to-purple-600 p-4">
+                    <h3 class="text-white font-semibold">AI Fashion Stylist</h3>
+                    <p class="text-white/90 text-sm">Ask me anything about style!</p>
+                </div>
+                
+                <div class="p-6 space-y-4 min-h-[300px]">
+                    <div class="flex justify-start">
+                        <div class="bg-gray-100 rounded-2xl px-4 py-3 max-w-xs">
+                            <p class="text-sm">Hi! I'm your AI stylist. What kind of look are you going for today?</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-end">
+                        <div class="bg-accent-600 text-white rounded-2xl px-4 py-3 max-w-xs">
+                            <p class="text-sm">I need something professional but stylish for a client meeting</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-start">
+                        <div class="bg-gray-100 rounded-2xl px-4 py-3">
+                            <p class="text-sm mb-3">Perfect! I've found some great professional outfits for you:</p>
+                            <div class="grid grid-cols-2 gap-2 mb-3">
+                                <div class="bg-gray-200 rounded-lg h-16 flex items-center justify-center">
+                                    <span class="text-xs text-gray-600">Tailored Blazer</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-lg h-16 flex items-center justify-center">
+                                    <span class="text-xs text-gray-600">Silk Blouse</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-600">95% style match • Total: $245</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-t p-4">
+                    <div class="flex items-center space-x-2">
+                        <input type="text" placeholder="Describe what you're looking for..." class="flex-1 p-3 border rounded-xl focus:ring-2 focus:ring-accent-500 focus:border-transparent">
+                        <button class="p-3 bg-accent-600 text-white rounded-xl hover:bg-accent-700">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <div class="w-8 h-8 bg-gradient-to-r from-accent-500 to-purple-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold">S</span>
+                </div>
+                <span class="text-xl font-bold">StyleAI</span>
+            </div>
+            <p class="text-gray-400 mb-6">Your AI Fashion Companion</p>
+            <p class="text-sm text-gray-500">&copy; 2024 StyleAI. Made with AI for fashion lovers.</p>
+        </div>
+    </footer>
+</body>
+</html>
