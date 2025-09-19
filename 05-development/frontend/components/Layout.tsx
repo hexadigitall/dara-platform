@@ -118,14 +118,14 @@ const Layout: React.FC<LayoutProps> = ({ children, className = '' }) => {
               <Link 
                 href="/" 
                 className="flex items-center space-x-2 focus-ring rounded-lg p-2 -ml-2"
-                aria-label="StyleAI Home"
+                aria-label="DARA Home"
               >
                 <div className="relative">
-                  <Sparkles className="h-8 w-8 text-accent-600" />
+                  <img src="/logos/dara-mark-64.png" alt="DARA" className="h-8 w-8" />
                   <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent-400 rounded-full animate-pulse" />
                 </div>
                 <span className="text-xl font-bold text-neutral-900 dark:text-white">
-                  StyleAI
+                  DARA
                 </span>
               </Link>
             </div>
@@ -287,7 +287,7 @@ const Layout: React.FC<LayoutProps> = ({ children, className = '' }) => {
       <footer className="bg-white dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800" role="contentinfo">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-sm text-neutral-600 dark:text-neutral-400">
-            <p>&copy; 2024 StyleAI. Made with AI for fashion lovers.</p>
+            <p>&copy; 2024 DARA. Made with AI for fashion lovers.</p>
             <div className="mt-2 space-x-4">
               <Link href="/privacy" className="hover:text-accent-600 focus-ring rounded">Privacy</Link>
               <Link href="/terms" className="hover:text-accent-600 focus-ring rounded">Terms</Link>

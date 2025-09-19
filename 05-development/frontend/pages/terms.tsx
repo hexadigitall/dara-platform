@@ -11,10 +11,10 @@ export default function TermsPage() {
           <p className="lead">Last updated: September 2024</p>
           
           <h2>Acceptance of Terms</h2>
-          <p>By accessing and using StyleAI, you accept and agree to be bound by the terms and provision of this agreement.</p>
+          <p>By accessing and using DARA, you accept and agree to be bound by the terms and provision of this agreement.</p>
           
           <h2>Use License</h2>
-          <p>Permission is granted to temporarily use StyleAI for personal, non-commercial transitory viewing only.</p>
+          <p>Permission is granted to temporarily use DARA for personal, non-commercial transitory viewing only.</p>
           
           <h2>AI Styling Services</h2>
           <p>Our AI recommendations are provided for informational purposes. While we strive for accuracy, we cannot guarantee that our suggestions will meet your specific needs or preferences.</p>

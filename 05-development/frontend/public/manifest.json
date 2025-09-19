@@ -1,1 +1,38 @@
-{"name": "StyleAI", "short_name": "StyleAI", "display": "standalone", "background_color": "#f8fafc", "theme_color": "#d946ef", "start_url": "/"}
+{
+  "name": "DARA - AI Fashion Platform",
+  "short_name": "DARA",
+  "description": "AI-powered fashion platform offering personalized styling recommendations and sustainable fashion marketplace",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#F59E0B",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["fashion", "shopping", "lifestyle"],
+  "screenshots": [
+    {
+      "src": "/logos/dara-logo-large.png",
+      "sizes": "800x240",
+      "type": "image/png",
+      "label": "DARA AI Fashion Platform"
+    }
+  ]
+}

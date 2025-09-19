@@ -351,7 +351,7 @@ export default function BrandsPage() {
           className="mt-12 bg-gradient-to-r from-accent-600 to-accent-700 rounded-lg p-8 text-center text-white"
         >
           <Users className="h-8 w-8 mx-auto mb-4" />
-          <h3 className="text-2xl font-bold mb-2">Partner with StyleAI</h3>
+          <h3 className="text-2xl font-bold mb-2">Partner with DARA</h3>
           <p className="mb-6 opacity-90 max-w-2xl mx-auto">
             Are you a sustainable fashion brand looking to reach conscious consumers? 
             Join our curated marketplace and connect with customers who value quality and ethics.

@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
       name: 'Sarah Chen',
       role: 'Marketing Director',
       avatar: '/avatars/sarah.jpg',
-      content: "StyleAI transformed how I shop. Instead of spending hours browsing, I just tell it what I need and get perfect suggestions instantly.",
+      content: "DARA transformed how I shop. Instead of spending hours browsing, I just tell it what I need and get perfect suggestions instantly.",
       rating: 5
     },
     {
@@ -259,7 +259,7 @@ const HomePage: React.FC = () => {
               What Our Users Say
             </h2>
             <p className="text-xl text-neutral-600 dark:text-neutral-300">
-              Join thousands of fashion enthusiasts who love StyleAI
+              Join thousands of fashion enthusiasts who love DARA
             </p>
           </motion.div>
 

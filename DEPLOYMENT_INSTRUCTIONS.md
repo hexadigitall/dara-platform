@@ -1,10 +1,10 @@
-# 🚀 StyleAI Deployment Guide
+# 🚀 DARA Deployment Guide
 
 ## Step 1: Create GitHub Repository
 
 1. **Go to GitHub** → https://github.com/new
-2. **Repository name:** `styleai-platform`
-3. **Description:** `AI-Powered Fashion Platform - Personalized styling recommendations and sustainable fashion marketplace`
+2. **Repository name:** `dara-platform`
+3. **Description:** `Beautiful AI Fashion for Everyone - Personalized styling recommendations and sustainable fashion marketplace`
 4. **Visibility:** Choose Public or Private
 5. **DON'T initialize** with README, .gitignore, or license (we already have them)
 6. **Click "Create repository"**
@@ -15,7 +15,7 @@ Copy your repository URL and run these commands:
 
 ```bash
 # Replace YOUR_USERNAME with your GitHub username
-git remote add origin https://github.com/YOUR_USERNAME/styleai-platform.git
+git remote add origin https://github.com/YOUR_USERNAME/dara-platform.git
 git branch -M main
 git push -u origin main
 ```
@@ -26,7 +26,7 @@ git push -u origin main
 1. Go to **https://vercel.com**
 2. Sign in with your GitHub account
 3. Click **"New Project"**
-4. **Import** your `styleai-platform` repository
+4. **Import** your `dara-platform` repository
 5. **Framework Preset:** Next.js (should auto-detect)
 6. **Root Directory:** `05-development/frontend`
 7. **Build Command:** `npm run build` (should auto-fill)
@@ -51,7 +51,7 @@ npx vercel --prod
 ## Step 5: Test Your Deployed App
 
 Your app will be available at a URL like:
-- `https://styleai-platform.vercel.app`
+- `https://dara-platform.vercel.app`
 - Or a custom domain if you set one up
 
 ## 🎯 Expected Results
@@ -89,5 +89,5 @@ The app works perfectly despite some hydration warnings (time display issue). Th
 
 ## 🎉 You're Done!
 
-Your StyleAI platform is now live and accessible from anywhere!
+Your DARA platform is now live and accessible from anywhere!
 Share the URL with others to test on different devices.

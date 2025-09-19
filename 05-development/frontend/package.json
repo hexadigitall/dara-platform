@@ -1,7 +1,7 @@
 {
-  "name": "styleai-frontend",
+  "name": "dara-frontend",
   "version": "1.0.0",
-  "description": "StyleAI Frontend - Conversational Fashion AI Platform",
+  "description": "DARA Frontend - Conversational Fashion AI Platform",
   "private": true,
   "scripts": {
     "dev": "next dev",

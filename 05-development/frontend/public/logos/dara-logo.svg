@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D97706;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FBBF24;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7C2D12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle with African pattern inspiration -->
+  <circle cx="60" cy="60" r="50" fill="url(#brandGradient)" opacity="0.15"/>
+  
+  <!-- Stylized 'D' with geometric African pattern -->
+  <path d="M20 25 L20 95 L45 95 Q75 95 75 60 Q75 25 45 25 Z" 
+        fill="url(#brandGradient)" 
+        stroke="url(#accentGradient)" 
+        stroke-width="2"/>
+        
+  <!-- Inner pattern for 'D' -->
+  <path d="M30 40 L30 80 L45 80 Q60 80 60 60 Q60 40 45 40 Z" 
+        fill="#FFFFFF" 
+        opacity="0.3"/>
+        
+  <!-- Decorative dots (African-inspired) -->
+  <circle cx="25" cy="35" r="2" fill="#FBBF24"/>
+  <circle cx="25" cy="45" r="1.5" fill="#F59E0B"/>
+  <circle cx="25" cy="55" r="2" fill="#FBBF24"/>
+  <circle cx="25" cy="65" r="1.5" fill="#F59E0B"/>
+  <circle cx="25" cy="75" r="2" fill="#FBBF24"/>
+  <circle cx="25" cy="85" r="1.5" fill="#F59E0B"/>
+  
+  <!-- DARA text -->
+  <text x="100" y="70" 
+        font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" 
+        font-size="48" 
+        font-weight="700" 
+        fill="url(#brandGradient)"
+        filter="url(#glow)">DARA</text>
+        
+  <!-- Tagline -->
+  <text x="102" y="88" 
+        font-family="'Inter', sans-serif" 
+        font-size="12" 
+        font-weight="400" 
+        fill="#6B7280"
+        letter-spacing="2px">AI FASHION PLATFORM</text>
+        
+  <!-- Accent elements -->
+  <rect x="100" y="92" width="40" height="2" fill="url(#accentGradient)" rx="1"/>
+  <rect x="145" y="94" width="20" height="1" fill="url(#brandGradient)" rx="0.5"/>
+  
+  <!-- Decorative African-inspired geometric elements -->
+  <polygon points="350,20 360,35 370,20 380,35 390,20" 
+           fill="none" 
+           stroke="url(#brandGradient)" 
+           stroke-width="2" 
+           opacity="0.6"/>
+           
+  <polygon points="350,100 360,85 370,100 380,85 390,100" 
+           fill="none" 
+           stroke="url(#accentGradient)" 
+           stroke-width="2" 
+           opacity="0.6"/>
+</svg>

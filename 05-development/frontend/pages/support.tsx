@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "Are the recommendations really personalized?",
-    a: "Yes! The more you use StyleAI, the better it learns your preferences and provides increasingly accurate suggestions."
+    a: "Yes! The more you use DARA, the better it learns your preferences and provides increasingly accurate suggestions."
   },
   {
     q: "How do I return items?",
