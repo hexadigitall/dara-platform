@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_APP_NAME": "DARA",
+    "NEXT_PUBLIC_APP_DESCRIPTION": "Beautiful AI Fashion Platform celebrating cultural diversity"
+  }
+}
