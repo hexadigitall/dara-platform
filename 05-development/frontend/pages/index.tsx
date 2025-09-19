@@ -1,357 +1,201 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
-import { motion, useInView } from 'framer-motion'
-import { 
-  Sparkles, 
-  MessageCircle, 
-  Zap, 
-  Users, 
-  ArrowRight,
-  Play,
-  Star,
-  ShoppingBag,
-  Palette,
-  Brain
-} from 'lucide-react'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from 'react'
+import { motion } from 'framer-motion'
+import { Sparkles, TrendingUp, Users, ShoppingBag, Star, ArrowRight } from 'lucide-react'
 import Layout from '../components/Layout'
+import Link from 'next/link'
 
-const HomePage: React.FC = () => {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0)
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false)
-
-  const features = [
-    {
-      icon: MessageCircle,
-      title: 'Conversational AI Styling',
-      description: 'Simply describe what you want: "I need something chic for a client dinner" and get perfect recommendations.',
-      gradient: 'from-blue-500 to-purple-600'
-    },
-    {
-      icon: Sparkles,
-      title: 'Virtual Try-On',
-      description: 'See how clothes look on you with our advanced AR technology before you buy.',
-      gradient: 'from-purple-500 to-pink-600'
-    },
-    {
-      icon: ShoppingBag,
-      title: 'Cross-Brand Shopping',
-      description: 'Shop from 50+ brands in one place with unified checkout and comparison.',
-      gradient: 'from-pink-500 to-red-600'
-    },
-    {
-      icon: Brain,
-      title: 'Personal Style Learning',
-      description: 'Our AI learns your preferences and gets better at styling you over time.',
-      gradient: 'from-green-500 to-teal-600'
-    }
-  ]
-
-  const testimonials = [
-    {
-      name: 'Sarah Chen',
-      role: 'Marketing Director',
-      avatar: '/avatars/sarah.jpg',
-      content: "DARA transformed how I shop. Instead of spending hours browsing, I just tell it what I need and get perfect suggestions instantly.",
-      rating: 5
-    },
-    {
-      name: 'Mike Rodriguez',
-      role: 'Software Engineer',
-      content: "Finally, an AI that understands style! It helped me find my professional wardrobe without the guesswork.",
-      rating: 5
-    },
-    {
-      name: 'Emma Thompson',
-      role: 'Fashion Blogger',
-      content: "The virtual try-on feature is incredible. I can see exactly how outfits will look before ordering. Game changer!",
-      rating: 5
-    }
-  ]
-
-  const stats = [
-    { value: '50K+', label: 'Happy Users' },
-    { value: '1M+', label: 'Outfits Created' },
-    { value: '500+', label: 'Partner Brands' },
-    { value: '95%', label: 'Satisfaction Rate' }
-  ]
-
-  // Auto-rotate testimonials
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)
-    }, 5000)
-    return () => clearInterval(timer)
-  }, [testimonials.length])
-
-  const fadeInUp = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6, ease: 'easeOut' }
-  }
-
-  const staggerChildren = {
-    initial: {},
-    animate: {
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  }
-
+export default function HomePage() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-accent-50 via-white to-purple-50 dark:from-neutral-900 dark:via-neutral-800 dark:to-purple-900">
-        {/* Background Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-accent-200 dark:bg-accent-800 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-          <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-purple-200 dark:bg-purple-800 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-pink-200 dark:bg-pink-800 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-neutral-50 via-white to-accent-50 dark:from-neutral-900 dark:via-neutral-800 dark:to-neutral-900">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle, #F59E0B 1px, transparent 1px)',
+            backgroundSize: '50px 50px'
+          }} />
         </div>
-
+        
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 dark:text-white mb-6">
-              Your AI Fashion
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-accent-600 to-purple-600">
-                Companion
+            {/* Hero Badge */}
+            <div className="inline-flex items-center px-4 py-2 mb-8 bg-accent-100 dark:bg-accent-900 rounded-full text-accent-700 dark:text-accent-300">
+              <Sparkles className="h-4 w-4 mr-2" />
+              <span className="text-sm font-medium">Beautiful AI Fashion for Everyone</span>
+            </div>
+
+            {/* Hero Title */}
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">
+              <span className="block text-neutral-900 dark:text-white">Meet</span>
+              <span className="block bg-gradient-to-r from-accent-600 via-accent-500 to-accent-400 bg-clip-text text-transparent">
+                DARA
               </span>
             </h1>
-            
-            <p className="text-xl sm:text-2xl text-neutral-600 dark:text-neutral-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Describe your style in natural language and discover perfect outfits from hundreds of brands. 
-              <span className="font-semibold text-accent-600">AI-powered, personalized, effortless.</span>
+
+            {/* Hero Subtitle */}
+            <p className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+              Your personal AI fashion advisor celebrating global diversity with African-inspired design. 
+              Discover beautiful styles that reflect your unique story.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-              <Link
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+              <Link 
                 href="/style"
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-accent-600 to-purple-600 text-white font-semibold rounded-2xl hover:from-accent-700 hover:to-purple-700 focus-ring transform hover:scale-105 transition-all duration-200 shadow-strong"
+                className="group px-8 py-4 bg-accent-600 text-white rounded-lg font-semibold text-lg hover:bg-accent-700 transition-all duration-300 transform hover:scale-105 focus-ring flex items-center"
               >
-                <Sparkles className="w-5 h-5 mr-2" />
-                Start Styling Now
-                <ArrowRight className="w-5 h-5 ml-2" />
+                Start Your Style Journey
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               
-              <button
-                onClick={() => setIsVideoPlaying(true)}
-                className="inline-flex items-center px-8 py-4 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-white font-semibold rounded-2xl border-2 border-neutral-200 dark:border-neutral-700 hover:border-accent-300 dark:hover:border-accent-600 focus-ring transform hover:scale-105 transition-all duration-200"
-              >
-                <Play className="w-5 h-5 mr-2" />
+              <button className="px-8 py-4 border-2 border-accent-600 text-accent-600 dark:text-accent-400 rounded-lg font-semibold text-lg hover:bg-accent-50 dark:hover:bg-accent-900 transition-colors focus-ring">
                 Watch Demo
               </button>
             </div>
-
-            {/* Social Proof */}
-            <div className="flex items-center justify-center space-x-2 text-sm text-neutral-500 dark:text-neutral-400">
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <div
-                    key={i}
-                    className="w-8 h-8 rounded-full bg-gradient-to-r from-accent-400 to-purple-500 border-2 border-white dark:border-neutral-800 flex items-center justify-center text-white text-xs font-semibold"
-                  >
-                    {i}
-                  </div>
-                ))}
-              </div>
-              <span>Trusted by 50,000+ fashion lovers</span>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 bg-white dark:bg-neutral-900 border-y border-neutral-200 dark:border-neutral-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            className="grid grid-cols-2 md:grid-cols-4 gap-8"
-            variants={staggerChildren}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-          >
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                variants={fadeInUp}
-                className="text-center"
-              >
-                <div className="text-3xl md:text-4xl font-bold text-accent-600 mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-neutral-600 dark:text-neutral-400 font-medium">
-                  {stat.label}
-                </div>
-              </motion.div>
-            ))}
           </motion.div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-neutral-50 dark:bg-neutral-800">
+      <section className="py-20 bg-white dark:bg-neutral-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-16"
-            variants={fadeInUp}
-            initial="initial"
-            whileInView="animate"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-white mb-4">
-              Fashion AI That Actually Understands You
+              Why Choose DARA?
             </h2>
-            <p className="text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              Experience the future of fashion discovery with our cutting-edge AI technology
+            <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+              Experience fashion discovery like never before with our AI-powered platform celebrating global diversity.
             </p>
           </motion.div>
 
-          <motion.div
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-            variants={staggerChildren}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-          >
-            {features.map((feature, index) => {
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: Sparkles,
+                title: "AI Fashion Advisor",
+                description: "Get personalized styling advice from our culturally-aware AI that understands your unique preferences and celebrates your heritage.",
+                stats: "10K+ recommendations daily"
+              },
+              {
+                icon: TrendingUp, 
+                title: "Global Trend Insights",
+                description: "Stay ahead with trend analysis from fashion capitals worldwide, including emerging African fashion movements.",
+                stats: "500+ trend updates weekly"
+              },
+              {
+                icon: Users,
+                title: "Sustainable Marketplace",
+                description: "Shop from vetted ethical brands that prioritize sustainability and fair trade practices across all cultures.",
+                stats: "200+ ethical partners"
+              }
+            ].map((feature, index) => {
               const Icon = feature.icon
               return (
                 <motion.div
                   key={index}
-                  variants={fadeInUp}
-                  className="group p-6 bg-white dark:bg-neutral-900 rounded-2xl shadow-soft hover:shadow-strong transition-all duration-300 border border-neutral-100 dark:border-neutral-700 hover:border-accent-200 dark:hover:border-accent-800"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  className="text-center"
                 >
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${feature.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon className="w-6 h-6 text-white" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 mb-6 bg-accent-100 dark:bg-accent-900 rounded-xl">
+                    <Icon className="h-8 w-8 text-accent-600" />
                   </div>
-                  <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-3">
+                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-4">
                     {feature.title}
                   </h3>
-                  <p className="text-neutral-600 dark:text-neutral-300 text-sm leading-relaxed">
+                  <p className="text-neutral-600 dark:text-neutral-400 mb-4">
                     {feature.description}
                   </p>
+                  <div className="text-sm font-medium text-accent-600">
+                    {feature.stats}
+                  </div>
                 </motion.div>
               )
             })}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-20 bg-white dark:bg-neutral-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            className="text-center mb-16"
-            variants={fadeInUp}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-white mb-4">
-              What Our Users Say
-            </h2>
-            <p className="text-xl text-neutral-600 dark:text-neutral-300">
-              Join thousands of fashion enthusiasts who love DARA
-            </p>
-          </motion.div>
-
-          <div className="relative">
-            <motion.div
-              key={currentTestimonial}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-center"
-            >
-              <div className="flex justify-center mb-6">
-                {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              
-              <blockquote className="text-2xl text-neutral-900 dark:text-white font-medium mb-8 leading-relaxed">
-                "{testimonials[currentTestimonial].content}"
-              </blockquote>
-              
-              <div className="flex items-center justify-center space-x-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-accent-400 to-purple-500 flex items-center justify-center text-white font-semibold">
-                  {testimonials[currentTestimonial].name.charAt(0)}
-                </div>
-                <div className="text-left">
-                  <div className="font-semibold text-neutral-900 dark:text-white">
-                    {testimonials[currentTestimonial].name}
-                  </div>
-                  <div className="text-neutral-600 dark:text-neutral-400 text-sm">
-                    {testimonials[currentTestimonial].role}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Testimonial Navigation */}
-            <div className="flex justify-center mt-8 space-x-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentTestimonial(index)}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    index === currentTestimonial 
-                      ? 'bg-accent-600 w-8' 
-                      : 'bg-neutral-300 dark:bg-neutral-600 hover:bg-accent-300 dark:hover:bg-accent-700'
-                  }`}
-                  aria-label={`Go to testimonial ${index + 1}`}
-                />
-              ))}
-            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-accent-600 via-purple-600 to-pink-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* Social Proof */}
+      <section className="py-16 bg-neutral-50 dark:bg-neutral-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
-            variants={fadeInUp}
-            initial="initial"
-            whileInView="animate"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Transform Your Style?
-            </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Join thousands of fashion lovers who've discovered their perfect style with AI assistance.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/style"
-                className="inline-flex items-center px-8 py-4 bg-white text-accent-600 font-semibold rounded-2xl hover:bg-neutral-50 focus-ring transform hover:scale-105 transition-all duration-200 shadow-strong"
-              >
-                <Zap className="w-5 h-5 mr-2" />
-                Get Started Free
-              </Link>
-              <Link
-                href="/demo"
-                className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-2xl hover:bg-white hover:text-accent-600 focus-ring transform hover:scale-105 transition-all duration-200"
-              >
-                <Users className="w-5 h-5 mr-2" />
-                Book a Demo
-              </Link>
+            <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-8">
+              Trusted by Fashion Lovers Worldwide
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              {[
+                { number: '50K+', label: 'Active Users' },
+                { number: '1M+', label: 'Outfit Recommendations' },
+                { number: '200+', label: 'Partner Brands' },
+                { number: '4.9★', label: 'User Rating' }
+              ].map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="text-center"
+                >
+                  <div className="text-3xl md:text-4xl font-bold text-accent-600 mb-2">
+                    {stat.number}
+                  </div>
+                  <div className="text-neutral-600 dark:text-neutral-400">
+                    {stat.label}
+                  </div>
+                </motion.div>
+              ))}
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-br from-accent-600 via-accent-500 to-accent-400">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+              Ready to Discover Your Beautiful Style?
+            </h2>
+            <p className="text-xl text-accent-100 mb-8 max-w-2xl mx-auto">
+              Join thousands of fashion enthusiasts celebrating diversity through AI-powered styling.
+            </p>
+            <Link
+              href="/style"
+              className="inline-flex items-center px-8 py-4 bg-white text-accent-600 rounded-lg font-semibold text-lg hover:bg-accent-50 transition-colors focus-ring"
+            >
+              Start with DARA
+              <Sparkles className="ml-2 h-5 w-5" />
+            </Link>
           </motion.div>
         </div>
       </section>
     </Layout>
   )
 }
-
-export default HomePage
