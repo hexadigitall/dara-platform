@@ -1,0 +1,135 @@
+openapi: 3.0.3
+info:
+  title: DARA Platform API
+  description: Beautiful AI Fashion Platform with Cultural Awareness
+  version: 1.0.0
+  contact:
+    name: Hexadigitall
+    url: https://hexadigitall.com
+    email: support@hexadigitall.com
+
+servers:
+  - url: https://api.dara.fashion/v1
+    description: Production server
+  - url: https://staging-api.dara.fashion/v1
+    description: Staging server
+
+paths:
+  /auth/register:
+    post:
+      summary: Register new user with cultural preferences
+      tags: [Authentication]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserRegistration'
+      responses:
+        '201':
+          description: User registered successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+
+  /style/analyze:
+    post:
+      summary: Analyze style with cultural awareness
+      tags: [AI Style Analysis]
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StyleRequest'
+      responses:
+        '200':
+          description: Style analysis completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StyleAnalysisResponse'
+
+  /cultural/heritage:
+    get:
+      summary: Get cultural heritage information
+      tags: [Cultural Discovery]
+      parameters:
+        - name: region
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Cultural heritage data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CulturalHeritageResponse'
+
+components:
+  schemas:
+    UserRegistration:
+      type: object
+      required:
+        - email
+        - password
+        - name
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+          minLength: 8
+        name:
+          type: string
+        cultural_preferences:
+          type: object
+          properties:
+            regions:
+              type: array
+              items:
+                type: string
+            style_influences:
+              type: array
+              items:
+                type: string
+
+    StyleRequest:
+      type: object
+      required:
+        - text
+      properties:
+        text:
+          type: string
+          description: Natural language style request
+        cultural_context:
+          type: string
+          description: Cultural context for recommendations
+        preferences:
+          type: object
+          description: User style preferences
+
+    StyleAnalysisResponse:
+      type: object
+      properties:
+        analysis_id:
+          type: string
+        cultural_context:
+          type: object
+        style_recommendations:
+          type: array
+          items:
+            type: object
+        cultural_insights:
+          type: object
+
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

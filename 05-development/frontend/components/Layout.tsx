@@ -287,8 +287,8 @@ const Layout: React.FC<LayoutProps> = ({ children, className = '' }) => {
       <footer className="bg-white dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800" role="contentinfo">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-sm text-neutral-600 dark:text-neutral-400">
-            <p>&copy; 2024 DARA. Made with AI for fashion lovers.</p>
-            <div className="mt-2 space-x-4">
+            <p>&copy; 2024 DARA. Made by <a href="https://hexadigitall.com" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:text-accent-700 font-medium focus-ring rounded">Hexadigitall</a>.</p>
+            <div className="mt-3 space-x-4">
               <Link href="/privacy" className="hover:text-accent-600 focus-ring rounded">Privacy</Link>
               <Link href="/terms" className="hover:text-accent-600 focus-ring rounded">Terms</Link>
               <Link href="/support" className="hover:text-accent-600 focus-ring rounded">Support</Link>

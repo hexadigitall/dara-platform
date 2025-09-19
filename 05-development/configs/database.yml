@@ -1,0 +1,40 @@
+# DARA Platform Database Configuration
+
+development:
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  database: dara_development
+  username: dara_user
+  password: dara_pass
+  pool_size: 5
+  timeout: 30
+  cultural_data_encryption: true
+  compliance_logging: true
+
+staging:
+  adapter: postgresql
+  host: ${STAGING_DB_HOST}
+  port: 5432
+  database: dara_staging
+  username: ${STAGING_DB_USER}
+  password: ${STAGING_DB_PASS}
+  pool_size: 10
+  timeout: 30
+  cultural_data_encryption: true
+  compliance_logging: true
+  ssl_mode: require
+
+production:
+  adapter: postgresql
+  host: ${PRODUCTION_DB_HOST}
+  port: 5432
+  database: dara_production
+  username: ${PRODUCTION_DB_USER}
+  password: ${PRODUCTION_DB_PASS}
+  pool_size: 20
+  timeout: 30
+  cultural_data_encryption: true
+  compliance_logging: true
+  ssl_mode: require
+  cultural_consultant_required: true

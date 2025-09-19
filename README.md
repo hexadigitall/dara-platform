@@ -1,11 +1,8 @@
-# StyleAI - AI-Powered Fashion Platform 🎨✨
+# Dara: AI Fashion Stylist App 🎨👗
 
-A modern, AI-driven fashion platform that provides personalized styling recommendations, trend insights, and curated fashion content from sustainable brands.
+## Project Overview
 
-![StyleAI Platform](https://img.shields.io/badge/Next.js-14.0.3-black?style=for-the-badge&logo=next.js)
-![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-teal?style=for-the-badge&logo=tailwind-css)
+**Dara** - An innovative AI-powered fashion recommendation app that transforms how users discover, visualize, and purchase clothing. Users describe their desired style and concept through natural language prompts, and the app generates personalized clothing options with realistic visualizations showing how items would look on them, complete with direct purchasing capabilities from multiple retailers.
 
 ## 🌟 Features
 
@@ -42,7 +39,7 @@ A modern, AI-driven fashion platform that provides personalized styling recommen
 
 ## 🚀 Live Demo
 
-Visit the live application: **[StyleAI Platform](https://styleai-platform.vercel.app)** *(will be updated after deployment)*
+Visit the live application: **[DARA Platform](https://styleai-platform.vercel.app)** *(will be updated after deployment)*
 
 ## 📱 Screenshots
 
@@ -191,12 +188,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Documentation**: [docs.styleai.com](https://docs.styleai.com)
 - **Email**: support@styleai.com
-- **Discord**: [StyleAI Community](https://discord.gg/styleai)
+- **Discord**: [DARA Community](https://discord.gg/styleai)
 - **Issues**: [GitHub Issues](https://github.com/yourusername/styleai-platform/issues)
 
 ## 👥 Team
 
-Built with ❤️ by the StyleAI team:
+Built with ❤️ by the DARA team:
 - Fashion AI Technology
 - Sustainable Fashion Advocacy
 - User-Centered Design
@@ -204,3 +201,6 @@ Built with ❤️ by the StyleAI team:
 ---
 
 **Made with sustainable fashion in mind** 🌱 | **Powered by AI** 🤖 | **Built for everyone** 🌍
+
+---
+**Made by [Hexadigitall](https://hexadigitall.com)** - *From Idea to Impact. Your All-in-One Digital Partner.*

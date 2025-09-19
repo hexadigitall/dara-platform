@@ -1,0 +1,48 @@
+# Cultural Sensitivity Configuration for DARA Platform
+
+cultural_awareness:
+  enabled: true
+  sensitivity_level: high
+  consultant_approval_required: true
+  bias_detection_enabled: true
+  
+cultural_consultants:
+  - name: "West African Heritage Consultant"
+    regions: ["Ghana", "Nigeria", "Mali", "Senegal"]
+    contact: "west-african@cultural-consultants.org"
+    specialties: ["Kente", "Ankara", "Traditional Patterns"]
+  
+  - name: "Caribbean Culture Specialist"
+    regions: ["Jamaica", "Trinidad", "Barbados", "Haiti"]
+    contact: "caribbean@cultural-consultants.org"
+    specialties: ["Island Fashion", "Cultural Celebrations"]
+  
+  - name: "South Asian Fashion Expert"
+    regions: ["India", "Pakistan", "Bangladesh", "Sri Lanka"]
+    contact: "south-asian@cultural-consultants.org"
+    specialties: ["Sari", "Traditional Weaving", "Regional Variations"]
+
+cultural_guidelines:
+  attribution_required:
+    - "Kente patterns"
+    - "Sacred symbols"
+    - "Ceremonial wear"
+    - "Religious garments"
+  
+  educational_context_required:
+    - "Traditional patterns"
+    - "Cultural colors"
+    - "Historical significance"
+    - "Regional variations"
+  
+  community_benefit_focus:
+    - "Support origin communities"
+    - "Fair trade practices"
+    - "Cultural preservation"
+    - "Economic empowerment"
+
+compliance_monitoring:
+  enabled: true
+  audit_frequency: "monthly"
+  reporting_enabled: true
+  community_feedback_integration: true
