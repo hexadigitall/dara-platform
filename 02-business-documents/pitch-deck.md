@@ -1,7 +1,7 @@
 # StyleAI - Investor Pitch Deck
 
 ## Slide 1: Title Slide
-**StyleAI**
+**DARA**
 *Your AI Fashion Companion*
 
 "Making every human their most stylish self through conversational AI"
@@ -26,7 +26,7 @@
 ---
 
 ## Slide 3: Solution
-### Meet StyleAI: Your Conversational Fashion Companion
+### Meet DARA: Your Conversational Fashion Companion
 
 **Natural Language Styling:**
 *"I need something professional but approachable for client meetings"*
@@ -42,7 +42,7 @@
 ---
 
 ## Slide 4: Product Demo
-### How StyleAI Works
+### How DARA Works
 
 1. **User Input:** "Show me edgy street style for weekend brunch"
 2. **AI Processing:** Style analysis + trend matching + personalization
@@ -79,7 +79,7 @@
 - Target: 500K transactions/year by Year 3
 
 **Secondary: Subscriptions (10%)**
-- StyleAI Pro: $9.99/month
+- DARA Pro: $9.99/month
 - Premium features, unlimited styling
 - Target: 15% conversion rate
 
@@ -125,13 +125,12 @@
 ## Slide 9: Team
 ### Experienced Team with Domain Expertise
 
-**[Founder 1] - CEO**
-- Previous: Fashion tech startup (acquired)
-- MIT MBA, 8 years retail experience
+**[Founder 1] - CEO/CTO**
+- Current: Business Development tech startup (owned) https://hexadigitall.com
+- BSc Computer Science, 8 years retail experience
 
-**[Founder 2] - CTO**
-- Previous: Senior AI Engineer at Meta
-- PhD Computer Science, published AI researcher
+**[Founder 2] - CFO**
+- ACCA ICAN, published Business/Finance Expert
 
 **[Founder 3] - Head of Design**
 - Previous: Lead Designer at major fashion app
@@ -258,8 +257,8 @@
 **The Ask:** $1.2M for 15% equity
 
 **Contact:**
-- Email: founders@styleai.com
-- Demo: styleai.com/demo
+- Email: hexadigitztech@gmail.com
+- Demo: dara.com/demo
 
 ---
 
