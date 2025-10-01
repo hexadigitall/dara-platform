@@ -1,8 +1,8 @@
-# StyleAI - Executive Summary
+# DARA - Executive Summary
 
 ## 🎯 Business Overview
 
-**Company Name:** StyleAI  
+**Company Name:** DARA  
 **Mission:** Democratize personal styling through conversational AI, making fashion accessible, personalized, and seamlessly shoppable for everyone.
 
 **Vision:** To become the world's first AI fashion companion that understands style as intuitively as a human stylist while providing instant access to global fashion inventory.
@@ -21,7 +21,7 @@
 - Virtual try-on technology exists but isn't integrated with comprehensive shopping
 - AI fashion recommendations are basic and don't understand nuanced style preferences
 
-## 🚀 Our Solution: StyleAI
+## 🚀 Our Solution: DARA
 
 ### Core Innovation:
 **Conversational Fashion Intelligence** - Users simply describe their style needs in natural language:
@@ -74,7 +74,7 @@
    - Target: 50,000 transactions/month by Year 2
 
 2. **Premium Subscriptions (25% of revenue)**
-   - StyleAI Pro: $9.99/month
+   - DARA Pro: $9.99/month
      - Unlimited styling requests
      - Advanced virtual try-on
      - Early access to trends
@@ -218,9 +218,9 @@
 ---
 
 **Contact Information:**
-- **Email**: team@styleai.com
-- **Website**: www.styleai.com
-- **LinkedIn**: /company/styleai
+- **Email**: team@dara.com
+- **Website**: www.dara.com
+- **LinkedIn**: /company/dara
 - **Location**: San Francisco, CA
 
 *"Making every human their most stylish self through the power of AI"*
