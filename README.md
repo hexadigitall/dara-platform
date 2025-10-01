@@ -98,8 +98,8 @@ styleai-platform/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/styleai-platform.git
-   cd styleai-platform
+   git clone https://github.com/hexadigitall/dara-platform.git
+   cd dara-platform
    ```
 
 2. **Install dependencies**
@@ -186,10 +186,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙋‍♀️ Support
 
-- **Documentation**: [docs.styleai.com](https://docs.styleai.com)
-- **Email**: support@styleai.com
-- **Discord**: [DARA Community](https://discord.gg/styleai)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/styleai-platform/issues)
+- **Documentation**: [docs.dara.com](https://docs.dara.com)
+- **Email**: support@dara.com
+- **Discord**: [DARA Community](https://discord.gg/dara)
+- **Issues**: [GitHub Issues](https://github.com/hexadigitall/dara-platform/issues)
 
 ## 👥 Team
 
